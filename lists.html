@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Lists HTML</title>
+    <style>
+        td {
+            border: 2px solid green;
+        }
+
+        th {
+            border: 2px solid green;
+        }
+    </style>
 </head>
 <body>
 
-<ol style="list-style-type: decimal-leading-zero">
+<ol style="list-style: georgian inside;">
     <li value="5">хлеб</li>
     <li>молоко</li>
     <li value="2">колбаса</li>
     <li>овощи
         <ul>
             <li>капуста
-                <ul style="list-style-image: url('http://i.imgur.com/PA5zRrp.png?1')">
+                <ul style="list-style-type: square;">
                     <li>пекинская</li>
                     <li>цветная</li>
                 </ul>
@@ -26,7 +35,6 @@
     <li>масло</li>
 </ol>
 
-
 <dl>
     <dt>овощ</dt>
     <dd>капуста</dd>
@@ -34,6 +42,47 @@
     <dd>вишня</dd>
 </dl>
 
+
+
+
+<table style="text-align: center; width: 200px; height: 300px; border: 3px solid green">
+    <caption>Калькулятор</caption>
+    <thead>
+        <tr>
+            <td colspan="5">0</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="3">C</td>
+            <td colspan="2">&larr;</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>/</td>
+            <td rowspan="4">=</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td colspan="2">0</td>
+            <td>.</td>
+            <td>+</td>
+        </tr>
+    </tbody>
+</table>
 
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="signup_styles.css">
+</head>
+<body>
+<form action="signup.html" id="formpost" method="get">
+<div class="main">
+    <p style="text-align: center;"><span style="font-family: 'Open Sans', sans-serif; font-size: 16px; ">Registration</span></p>
+    <div class="labels_inputs">
+            <div class="labels">
+                <label for="username">Username: </label><br>
+                <label for="pass1">Password: </label><br>
+                <label for="pass2">Repeat Password: </label><br>
+                <label for="email">E-mail: </label><br>
+                <label for="month-date">Date of Birth: </label><br>
+            </div>
+
+            <div class="inputs">
+                    <input type="text" name="username" id="username" placeholder="Username" required><br>
+                    <input type="password" name="password" id="pass1" placeholder="Password" required><br>
+                    <input type="password" name="passconfirm" id="pass2" placeholder="Repeat Password" required><br>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+                    <input type="text" id="month-date" placeholder="mm" required>
+                    <input type="text" id="day-date" placeholder="dd" required>
+                    <input type="text" id="year-date" placeholder="yyyy" required>
+            </div>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" id="check"> I agree to the Terms of Use
+            </label>
+        </div>
+
+        <div class="button-submit">
+            <input type="submit" id="button" value="Register >>">
+        </div>
+</div>
+</form>
+</body>
+</html>

@@ -2,16 +2,10 @@
 <html lang="en" xmlns:http="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Lane 8, music, video, live, deep house, trance">
+    <meta name="description" content="Страница для ознакомления с творчеством диджея и продюсера Lane 8.">
     <title>Lists HTML</title>
-    <style>
-        td {
-            border: 2px solid green;
-        }
-
-        th {
-            border: 2px solid green;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!--
@@ -82,7 +76,6 @@
     </tbody>
 </table>
 -->
-
 <!--
 <p><img src="img/Admin.jpg"alt="Карта Киева" width="1224" height="1200" usemap="#kyivmap"></p>
 
@@ -92,9 +85,50 @@
     <area href="index.html" title="Печерский" shape="poly" coords="629, 510, 644, 486, 642, 477, 655, 486, 656, 478, 698, 507, 737, 551, 758, 595, 726, 607, 718, 627, 697, 639, 670, 630, 640, 628, 630, 620, 643, 608, 636, 603, 618, 557, 621, 527, 627, 520" />
 </map>
 -->
+<!--
+<form method="post">
+    <fieldset style="width: 300px;">
+        <legend>BLA BLA BLA</legend>
+    <p><label><input type="checkbox" name="sex" value="man">МУЖ</label></p>
+    <p><label><input type="checkbox" name="sex" value="woman">ЖЕН</label></p>
 
-<p><label><input type="radio" name="sex">Муж</label></p>
-<p><label><input type="radio" name="sex">Жен</label></p>
+    <p><input type="hidden" name="hidden1" value="hidden1value"></p>
 
+
+
+
+    <p>Страна рождения: <input type="text" list="country"></p>
+        <datalist id="country">
+            <option value="Ukraine"></option>
+            <option value="Russia"></option>
+            <option value="France"></option>
+            <option value="USA"></option>
+        </datalist>
+<p>
+    Район
+    <select name="distinct">
+        <optgroup label="Правый берег">
+            <option value="1">Оболонский</option>
+            <option value="2">Деснянский</option>
+        </optgroup>
+        <option value="3">Подольский</option>
+        <option value="4">Соломенский</option>
+        <option value="5">Голосеевский</option>
+    </select>
+</p>
+
+
+    <input type="submit" value="Отправить">
+    </fieldset>
+</form>
+-->
+<div class="video">
+    <p><video src="https://cs634504.vk.me/u14153037/videos/0e33e0bf0c.720.mp4" controls="controls" width="720"></video></p>
+
+    <p><iframe width="720" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236681751&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></p>
+
+    <p><audio src="http://www14.zippyshare.com/d/1roz7lRP/1007/Andy_Moor_-_So_Much_More_feat.ogg" controls="controls"></audio></p>
+    <p><img src="img/css_svg.svg"></p>
+</div>
 </body>
 </html>

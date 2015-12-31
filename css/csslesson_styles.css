@@ -1,17 +1,47 @@
+@font-face {
+    src: url("../fonts/terminator real nfi.ttf");
+    font-family: "Terminator Font 22";
+}
+
 body {
     background: url("../img/catalog_background.jpg");
+    cursor: url('../img/cur1074.cur'), default;
+}
+
+a {
+
 }
 
 .blockCenter {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 500px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.blockCenter h1{
+    color: white;
+    font-family: "Terminator Font 22";
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.buttonCenter {
     width: 151px;
     height: 70px;
     text-align: center;
     vertical-align: middle;
-    margin: 0 auto;
+    margin: 200px auto;
 }
 
+nav li a{
+    text-decoration: none;
 
-.blockCenter a {
+}
+
+.buttonCenter a {
     text-decoration: none;
     color: white;
     text-shadow: 3px 3px 2px #666, -3px -3px 2px #999;
@@ -21,6 +51,8 @@ body {
     height: 70px;
     background:url("../img/nav.png") no-repeat;
     padding-top: 25px;
+
+
 }
 
 .link:hover {

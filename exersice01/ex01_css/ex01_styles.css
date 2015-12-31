@@ -1,0 +1,76 @@
+.reg {
+    width: 400px;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    box-sizing: padding-box;
+    padding: 100px 100px 80px 100px;
+    text-align: center;
+}
+
+.thank {
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    box-sizing: padding-box;
+    padding: 100px 100px 110px 100px;
+    text-align: center;
+}
+
+.name {
+    font-style: italic;
+    font-size: 40px;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.text{
+    color: #545454;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+
+.form input {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 10px 10px 6px;
+    width: 370px;
+    color: #535353;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 1.4em;
+    border: none;
+    border-bottom: 1px solid #737373;
+    outline: none;
+}
+
+.form input[type="text"]:-moz-placeholder, .form input[type="email"]:-moz-placeholder {
+    color: #535353;
+}
+
+.form input[type="text"]::-webkit-input-placeholder, .form input[type="email"]::-webkit-input-placeholder {
+    color: #535353;
+}
+
+button {
+    margin-top: 25px;
+    width: 386px;
+    height: 80px;
+    background: #d6837f;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ac4f48;
+}

@@ -1,0 +1,62 @@
+.header-logo {
+    width: 900px;
+    height: 90px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.header-logo div {
+    display: inline-block;
+    line-height: 45px;
+}
+
+.logo {
+    width: 182px;
+    height: 57px;
+    background: url("../ex02_img/logo.png") no-repeat;
+    margin: 16px 0;
+}
+
+.header-links {
+    width: 460px;
+}
+
+.header-links li {
+    list-style-type: none;
+}
+
+.header-logo .logo {
+
+}
+
+.header-logo .logo {
+
+}
+
+.sales-line {
+    width: 100%;
+    height: 40px;
+    background-color: #ef8a00;
+    vertical-align: middle;
+}
+
+.sales-content {
+    width: 900px;
+    height: 18px;
+    margin: 0 auto;
+    padding-top: 9px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sales-content a {
+    color: white;
+}
+
+.sales-content .close {
+    text-decoration: none;
+    font-size: 20px;
+    vertical-align: middle;
+}

@@ -18,6 +18,11 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     width: 1040px;
     height: 490px;
@@ -45,13 +50,8 @@ header .first-line .left-first-line {
     margin-top: 15px;
 }
 
-header a {
-    text-decoration: none;
-}
-
 header .first-line .left-first-line a.active {
     font-family: "Brandon Grotesque Bold", sans-serif;
-    color: black;
 }
 
 header .first-line .left-first-line a.no-active {
@@ -74,7 +74,7 @@ header .first-line .right-first-line ul li {
     display: inline;
 }
 
-header .first-line .right-first-line ul li:nth-child(2):before, header .first-line .right-first-line ul li:nth-child(2):after {
+header .first-line .right-first-line ul li:nth-child(2)::before, header .first-line .right-first-line ul li:nth-child(2)::after {
     content: "|";
     margin: 0 11px;
 }
@@ -108,4 +108,106 @@ header .logo-site-caption {
     width: 100%;
     height: 40px;
     background-color: rgb(233,239,235);
+}
+
+.header-navigation-line nav {
+    position: absolute;
+    left: 630px;
+}
+
+.header-navigation-line nav ul {
+    margin: 9px 0 0;
+    font-size: 18px;
+}
+
+.header-navigation-line nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.header-navigation-line nav ul li::after {
+    content: "|";
+    margin-left: 6px;
+}
+
+.header-navigation-line nav ul li:last-child::after {
+    content: "";
+}
+
+.header-navigation-line a {
+    padding-bottom: 3px;
+}
+
+.header-navigation-line a:hover {
+    border-bottom: 8px solid white;
+}
+
+main {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+main .first-line {
+    width: 100%;
+    height: 200px;
+    margin: 72px 0;
+}
+main .first-line .kashering, main .first-line .kash-img {
+    display: inline-block;
+    float: right;
+}
+
+main .first-line .kash-img {
+    width: 319px;
+    height: 180px;
+    background: url("../ex04_img/img1.jpg");
+    margin-left: 42px;
+}
+
+main .first-line .kashering h2 {
+    text-align: right;
+    font-weight: 500;
+    font-size: 35px;
+    margin: -8px 23px 0 0;
+}
+
+main .first-line .kashering ul {
+    margin: 20px 0 5px 0;
+}
+
+main .first-line .kashering ul li{
+    text-align: right;
+    list-style-type: none;
+    color: rgb(91,102,98);
+    font-size: 21px;
+    margin-bottom: 2px;
+}
+
+main .first-line .kashering span {
+    padding-bottom: 5px;
+    background:url('../ex04_img/dotted.gif') left bottom repeat-x;
+}
+
+main .first-line .kashering ul li::after{
+    content: url("../ex04_img/marker.jpg");
+    margin-left: 20px;
+    vertical-align: middle;
+    border-bottom: none;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    margin-top: 325px;
+    position: absolute;
+    background-color: rgb(207,220,216);
+}
+
+.separator .images-separators {
+    width: 736px;
+    margin: 0 auto;
+}
+
+.separator img:nth-child(2) {
+    margin: 0 290px;
 }

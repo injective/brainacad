@@ -211,3 +211,113 @@ main .first-line .kashering ul li::after{
 .separator img:nth-child(2) {
     margin: 0 290px;
 }
+
+main .second-line {
+    width: 100%;
+}
+
+main .second-line .block2-1, main .second-line .block2-2, main .second-line .block2-3 {
+    display: inline-table;
+    width: 320px;
+    height: 270px;
+    margin: 25px 10px;
+    text-align: center;
+}
+
+main h1 {
+    font-weight: 300;
+    font-size: 34px;
+    color: rgb(96,161,251);
+    margin: 0 0 32px 0;
+}
+
+main .second-line .bold {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+main .second-line .normal {
+    font-size: 13px;
+    margin: 22px auto;
+}
+
+.after-second-line {
+    width: 100%;
+    height: 455px;
+    background-color: rgb(247,250,249);
+    position: absolute;
+    top: 1075px;
+}
+
+main .third-line {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: 54px auto;
+    text-align: center;
+    color: rgb(140,153,151);
+}
+
+main .third-line .block3-1, main .third-line .block3-2, main .third-line .block3-3 {
+    width: 250px;
+    height: 255px;
+    display: inline-table;
+    text-align: center;
+    margin: 31px 36px 0;
+}
+
+main .third-line h1 {
+    color: black;
+}
+
+main .third-line h2 {
+    color: black;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+main .third-line .line-caption {
+    font-size: 18px;
+}
+
+main .third-line div {
+    font-size: 12px;
+}
+
+main .forth-line {
+    width: 100%;
+    height: 402px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+main .forth-line h1 {
+    color: black;
+    margin: 0 0 15px 0;
+}
+
+main .forth-line .line-caption {
+    margin-bottom: 30px;
+}
+
+main .block4-1-1, main .block4-1-2, main .block4-1-3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px;
+}
+
+main .block4-2-1, main .block4-2-2, main .block4-2-3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 36px;
+}
+
+main .block4-1-1 {
+    text-align: right;
+}
+
+main .block4-1-3 {
+    text-align: left;
+}

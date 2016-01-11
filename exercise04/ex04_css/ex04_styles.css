@@ -79,6 +79,10 @@ header .first-line .right-first-line ul li:nth-child(2)::before, header .first-l
     margin: 0 11px;
 }
 
+header .first-line .right-first-line a:hover {
+    border-bottom: 8px solid rgb(233,239,235);
+}
+
 header .header-telephone {
     float: right;
     margin: 16px 0;
@@ -346,7 +350,6 @@ main .block4-1-3 {
 main .fifth-line {
     width: 100%;
     height: 470px;
-    border: 1px dotted red;
     margin-top: 650px;
     text-align: center;
 }
@@ -359,7 +362,6 @@ main .fifth-line .block5-1, main .fifth-line .block5-2 {
 main .fifth-line .block5-1 {
     width: 590px;
     height: 430px;
-    border: 1px solid saddlebrown;
 }
 
 main .fifth-line .block5-1-1, main .fifth-line .block5-1-2, main .fifth-line .block5-1-3 {
@@ -379,7 +381,6 @@ main .fifth-line .block5-1-4 {
 main .fifth-line .block5-2 {
     width: 400px;
     height: 430px;
-    border: 1px solid darkorchid;
     text-align: left;
 }
 
@@ -388,24 +389,29 @@ main .fifth-line .lab1, main .fifth-line .num {
     color: rgb(90,93,94);
 }
 
+input {
+    outline: none;
+    padding-left: 10px;
+}
+
 main .fifth-line label.chbox {
-    font-size: 14px;
-    vertical-align: middle;
+    font-size: 13px;
 }
 
 main .fifth-line .chbox input {
-    margin: 12px;
+    margin: 9px;
     width: 20px;
     height: 20px;
+    vertical-align: middle;
 }
 
 main .fifth-line .lab1 {
     display: inline-block;
-    margin: 8px 1px;
+    margin: 6px 1px;
 }
 
 main .fifth-line input[type="text"], main .fifth-line input[type="tel"], main .fifth-line input[type="email"] {
-    width: 191px;
+    width: 180px;
     height: 42px;
     border-radius: 10px;
     text-align: left;
@@ -428,4 +434,46 @@ main .fifth-line input::-webkit-input-placeholder {
 
 main .fifth-line input::-moz-placeholder {
     font-size: 20px;
+}
+
+main .fifth-line h1, main .fifth-line .button5 {
+    text-align: center;
+}
+
+main .fifth-line button {
+    text-align: center;
+    width: 232px;
+    height: 42px;
+    background-color: rgb(252,219,46);
+    font-size: 25px;
+    font-variant: small-caps;
+    border: none;
+    border-radius: 4px;
+}
+
+main .fifth-line button:hover {
+    background-color: rgb(250, 183, 1);
+}
+
+main .sixth-line {
+    width: 1036px;
+    height: 394px;
+    margin: 55px auto;
+    background-image: url("../ex04_img/6.jpg");
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    margin: 100px 0 0 0;
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 16px;
 }

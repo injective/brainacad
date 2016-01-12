@@ -1,0 +1,68 @@
+body {
+    margin: 0 2px;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+
+header {
+    width: 1000px;
+    height: 80px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+header nav {
+    float: left;
+}
+
+header .ordered {
+    float: right;
+}
+
+header nav ul {
+    padding-left: 3px;
+    margin: 25px 0;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(149,149,149);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+header a:hover {
+    color: white;
+    background-color: rgb(149,149,149);
+}
+
+header .button {
+    width: 200px;
+    height: 40px;
+    border: 3px solid rgb(241,116,126);
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
+header .button:hover {
+    border: 3px double rgb(241,116,126);
+    color: white;
+    background-color: rgb(241, 116, 126);
+}
+
+header .ordered a {
+    color: rgb(241,116,126);
+}
+
+header .ordered .button span {
+    margin: 9px 24px;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+

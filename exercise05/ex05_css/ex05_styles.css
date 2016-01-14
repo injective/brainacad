@@ -216,33 +216,372 @@ main .caption {
     width: 1300px;
     height: 70px;
     text-align: center;
-    margin: 80px 0;
+    margin: 80px auto;
 }
 
 main .caption .caption1 {
+    width: 300px;
+    height: 20px;
+    margin: 0 auto;
     color: rgb(139, 139, 139);
     letter-spacing: 1px;
 }
 
 main .caption .caption2 {
-    margin-top: 12px;
+    width: 500px;
+    height: 30px;
+    margin: 12px auto 0;
     font-size: 30px;
     font-weight: 700;
 }
 
 main .sale-boxes {
-    width: 1300px;
-    height: 530px;
+    width: 905px;
+    height: 455px;
     margin: 0 auto;
-    border: 1px solid red;
+}
+
+main .sale-boxes .sale-box-first, main .sale-boxes .sale-box-second {
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
 }
 
 main .sale-boxes .sale-box-first {
     width: 430px;
     height: 450px;
-    box-shadow: black;
+    margin: 0 65px 0 0;
 }
 
 main .sale-boxes .sale-box-second {
+    width: 400px;
+    height: 400px;
+}
 
+main .sale-boxes .sale-box-first .sale-box-img {
+    width: 101px;
+    height: 91px;
+    background: url("../ex05_img/img3.png") no-repeat;
+    margin: 93px auto 0;
+}
+
+main .sale-boxes .sale-box-second .sale-box-img {
+    width: 92px;
+    height: 92px;
+    background: url("../ex05_img/img4.png") no-repeat;
+    margin: 67px auto 0;
+}
+
+main .sale-boxes .sale-box-capt1, main .sale-boxes .sale-box-capt2, main .sale-boxes .sale-box-link {
+    margin: 20px auto;
+    text-align: center;
+}
+
+main .sale-boxes .sale-box-capt1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+main .sale-boxes .sale-box-capt2 {
+    color: rgb(139, 139, 139);
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+main .sale-boxes .sale-box-link a {
+    color: rgb(248, 61, 75);
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+main .red-box {
+    width: 1300px;
+    height: 1160px;
+    background-color: rgb(240, 88, 99);
+    margin: 75px auto;
+    position: relative;
+}
+
+main .red-box .red-box-border-white {
+    position: absolute;
+    width: 1252px;
+    height: 1112px;
+    left: 21px;
+    top: 21px;
+    background-color: rgb(240, 88, 99);
+    border: 3px solid white;
+}
+
+main .red-box .red-box-border-white .caption1 {
+    text-align: center;
+    margin-top: 92px;
+    color: rgb(129, 42, 48);
+}
+
+main .red-box .red-box-border-white .caption2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 10px 0 93px;
+}
+main .red-box .red-box-border-white .red-box-lists {
+    width: 940px;
+    height: 450px;
+    margin: 0 auto;
+    color: white;
+}
+
+main .red-box .red-box-border-white .red-box-lists .column {
+    width: 190px;
+    height: 100%;
+    display: inline-table;
+    margin: 0px 67px 0 0;
+}
+
+main .red-box .red-box-border-white .red-box-lists .column-4 {
+    width: 130px;
+    margin: 0 0 0 0;
+}
+
+main .red-box .red-box-border-white .red-box-lists span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+main .red-box .red-box-border-white .red-box-lists ul {
+    padding: 0px 0 25px 20px;
+    line-height: 1.85em;
+}
+
+main .red-box .red-box-border-white .red-box-text {
+    width: 900px;
+    height: 60px;
+    margin: 90px auto 25px;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    line-height: 1.6em;
+}
+
+main .red-box .red-box-border-white .link-one {
+    width: 690px;
+    height: 48px;
+    border-radius: 23px;
+    margin: 26px auto 5px;
+    background-color: white;
+    box-shadow: 0 0 60px rgba(0,0,0,0.5);
+}
+
+main .red-box .red-box-border-white .link-one .link-button .link-picture, main .red-box .red-box-border-white .link-button .link-text {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+main .red-box .red-box-border-white .link-one .link-button {
+    width: 690px;
+    height: 48px;
+}
+
+main .red-box .red-box-border-white .link-one .link-button {
+    text-align: center;
+}
+
+main .red-box .red-box-border-white .link-one a {
+    text-decoration: none;
+}
+
+main .red-box .red-box-border-white .link-one .link-button .link-picture {
+    background-image: url("../ex05_img/img5.png");
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin: -5px 7px 0 0;
+}
+
+main .red-box .red-box-border-white .link-one .link-button .link-text {
+    text-decoration: none;
+    color: rgb(240, 88, 99);
+    font-weight: 700;
+    margin-top: 13px;
+}
+
+main .red-box .red-box-border-white .link-one:hover {
+    text-align: center;
+    background-color: rgb(248, 214, 0);
+}
+
+main .red-box .red-box-border-white .link-two {
+    width: 280px;
+    height: 25px;
+    margin: 28px auto;
+    font-size: 14px;
+}
+
+main .red-box .red-box-border-white .link-two a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px dotted black;
+}
+
+main .red-box .red-box-border-white .link-two a:hover {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+main .red-box .red-box-border-white .red-box-text-bold {
+    width: 500px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+main .features-block {
+    width: 930px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+main .features-block .feature {
+    width: 190px;
+    height: 100%;
+    display: inline-block;
+    margin: 0 18px;
+    text-align: center;
+}
+
+main .features-block .feature-img {
+    margin: 0 auto;
+}
+
+main .features-block .feature-1 .feature-img {
+    background: url("../ex05_img/img6.png") no-repeat;
+    width: 82px;
+    height: 82px;
+}
+
+main .features-block .feature-2 .feature-img {
+    background: url("../ex05_img/img7.png") no-repeat;
+    width: 99px;
+    height: 82px;
+}
+
+main .features-block .feature-3 .feature-img {
+    background: url("../ex05_img/img8.png") no-repeat;
+    width: 99px;
+    height: 82px;
+}
+
+main .features-block .feature-4 .feature-img {
+    background: url("../ex05_img/img9.png") no-repeat;
+    width: 66px;
+    height: 82px;
+}
+
+main .features-block .feature .feature-caption {
+    font-size: 20px;
+    line-height: 1.5em;
+    margin: 13px 0 4px;
+}
+
+main .features-block .feature .feature-free {
+    color: rgb(139, 139, 139);
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+main .black-box {
+    width: 1300px;
+    height: 1500px;
+    margin: 10px auto;
+    background: rgb(42, 42, 42);
+}
+
+main .black-box .caption1 {
+    width: 300px;
+    text-align: center;
+    margin: 92px auto 0;
+    color: rgb(139, 139, 139);
+}
+
+main .black-box .caption2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 10px 0 93px;
+}
+
+
+
+
+
+
+
+
+main .black-box .link-one {
+    width: 690px;
+    height: 48px;
+    border-radius: 23px;
+    margin: 26px auto 5px;
+    background-color: rgb(248, 61, 75);
+    box-shadow: 0 0 60px rgba(0,0,0,0.5);
+}
+
+main .black-box .link-one .link-button .link-picture, main .black-box .link-button .link-text {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+main .black-box .link-one .link-button {
+    width: 690px;
+    height: 48px;
+}
+
+main .black-box .link-one .link-button {
+    text-align: center;
+}
+
+main .black-box .link-one a {
+    text-decoration: none;
+}
+
+main .black-box .link-one .link-button .link-picture {
+    background-image: url("../ex05_img/img2.png");
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin: -5px 7px 0 0;
+}
+
+main .black-box .link-one .link-button .link-text {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin-top: 13px;
+}
+
+main .black-box .link-one:hover {
+    text-align: center;
+    background-color: rgb(248, 47, 34);
+}
+
+main .black-box .link-two {
+    width: 280px;
+    height: 25px;
+    margin: 28px auto;
+    font-size: 14px;
+}
+
+main .black-box .link-two a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px dotted white;
+}
+
+main .black-box .link-two a:hover {
+    border-bottom: 2px solid white;
 }

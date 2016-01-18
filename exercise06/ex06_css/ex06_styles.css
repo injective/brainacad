@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+}
+
+.bg {
+    position: relative;
+}
+
+.bg-left-side {
+    background-image: url("../ex06_img/bg-left-side.jpg");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 174px;
+    height: 2237px;
+}
+
+.bg-right-side {
+    background-image: url("../ex06_img/bg-right-side.jpg");
+    position: absolute;
+    left: 1173px;
+    top: 0px;
+    width: 178px;
+    height: 2237px;
+}
+
+.bg-footer {
+    background-image: url("../ex06_img/bg-footer.png");
+    position: absolute;
+    left: 0px;
+    top: 2218px;
+    width: 1351px;
+    height: 62px;
+}
+
+.bg-body {
+    background-color: white;
+    box-shadow: 0 0 9px black;
+    position: absolute;
+    left: 172px;
+    top: 0px;
+    width: 1002px;
+    height: 2280px;
+}
+
+header {
+    width: 1001px;
+    height: 149px;
+    margin: 0 auto;
+    position: relative;
+    left: -1px;
+    background-image: url("../ex06_img/header-2.png");
+}
+
+.bg-header-1 {
+    background-image: url("../ex06_img/bg-header-1.png");
+    position: relative;
+    left: -27px;
+    top: 0px;
+    width: 1053px;
+    height: 55px;
+}
+
+header .bg-header-1 nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 10px 0 0 50px;
+}
+
+header .bg-header-1 nav ul li {
+    display: inline-block;
+    font-family: Calibri;
+    font-size: 11pt;
+    font-weight: 400;
+    text-align: left;
+}
+
+header .bg-header-1 nav ul li a:hover {
+    border-bottom: 1px dotted #ffffff;
+}
+
+header .bg-header-1 nav ul li::after {
+    content: url("../ex06_img/header-1.png");
+    margin: 0 15px 0 20px;
+    vertical-align: middle;
+}
+
+header .bg-header-1 nav ul li:last-child::after {
+    content: "";
+}
+
+header .bg-header-1 nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header .logo {
+    background-image: url("../ex06_img/logo.png");
+    position: relative;
+    left: 24px;
+    top: 4px;
+    width: 244px;
+    height: 75px;
+}
+
+header .input-search {
+    display: inline-block;
+    position: relative;
+    top: -52px;
+    left: 345px;
+}
+
+header .input-search input {
+    width: 326px;
+    height: 29px;
+    outline: none;
+    border: 1px solid rgb(234, 215, 191);
+    border-radius: 15px;
+    box-shadow: inset 3px 3px 5px rgba(234, 215, 191, 0.6);
+    padding-left: 18px;
+}
+
+header .input-search input::-webkit-input-placeholder, header .input-search input::-moz-placeholder {
+    color: rgb(148, 101, 38);
+    font-family: Tahoma, sans-serif;
+    font-size: 9pt;
+}
+
+header .input-search .header-search {
+    position: absolute;
+    background-image: url("../ex06_img/search.png");
+    width: 15px;
+    height: 16px;
+    top: 9px;
+    right: 9px;
+}

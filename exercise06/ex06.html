@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercise 06</title>
+    <link href="http://allfont.ru/allfont.css?fonts=franklin-gothic-medium-cond" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="ex06_css/ex06_styles.css">
 </head>
 <body>
@@ -40,10 +41,191 @@
         <input type="text" placeholder="Найти рецепт">
         <div class="header-search"></div>
     </div>
+
+    <div class="login-register">
+        <nav>
+            <ul>
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Зарегистрироваться</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="social-networks">
+        <nav>
+            <ul>
+                <li><a href="#"><div class="sn vk"></div></a></li>
+                <li><a href="#"><div class="sn od"></div></a></li>
+                <li><a href="#"><div class="sn tw"></div></a></li>
+                <li><a href="#"><div class="sn fb"></div></a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
+    <nav class="main-navigation">
+        <ul>
+            <li><a href="#">САЛАТЫ</a></li>
+            <li><a href="#">СУПЫ</a></li>
+            <li><a href="#">ВТОРЫЕ</a></li>
+            <li><a href="#">ДЕСЕРТЫ</a></li>
+            <li><a href="#">ВЫПЕЧКА</a></li>
+            <li><a href="#">ДЕСЕРТЫ</a></li>
+            <li><a href="#">НАПИТКИ</a></li>
+            <li><a href="#">ДЛЯ ДЕТЕЙ</a></li>
+            <li><a href="#">СОВЕТ</a></li>
+            <li><a href="#">ЗАГОТОВКИ</a></li>
+            <li><a href="#">КУХНИ МИРА</a></li>
+            <li><a href="#">ЭНЦИКЛОПЕДИЯ</a></li>
+            <li><a href="#">ДИЕТА</a></li>
+        </ul>
+    </nav>
 
+    <div class="main-first-line">
+        <div class="block1-1">
+            <div class="block1-1-1">
+                <div class="name-event">
+                    <a href="#">
+                        Название праздника<br>
+                        или события
+                    </a>
+                </div>
+
+                <div class="date-event">
+                    <div class="date-event-day">7</div>
+                    <div class="date-event-month">апреля</div>
+                </div>
+
+                <div class="event-picture">
+                    <img src="ex06_img/main-4.jpg" width="367" height="167" alt="Ивент">
+                </div>
+
+                <div class="event-description">
+                    Это пример анонса новости, создан для того, чтобы<br>
+                    было понятно, где будет текст. Это пример анонса<br>
+                    новости, создан для того, чтобы было понятно, где<br>
+                    будет текст.
+                </div>
+            </div>
+
+            <div class="block1-1-2">
+                <nav>
+                    <ul>
+                        <li><a href="#">Суп средиземноморский с<br> гренками и соусом</a></li>
+                        <li><a href="#">Пульмени домашние с<br> картофелем и луком</a></li>
+                        <li><a href="#">Драники из овощей<br> и грибов с луком</a></li>
+                        <li><a href="#">Драники из овощей<br> и грибов с луком</a></li>
+                    </ul>
+                </nav>
+
+                <div class="all-recipes"><a href="#">все рецепты</a></div>
+            </div>
+        </div>
+
+        <div class="block1-2">
+            <div class="line1-2-1">Подбор рецепта</div>
+
+            <div class="line1-2-2">
+                <label for="first">Что будем готовить?<br>
+                    <select class="sel" name="first" id="first">
+                        <option value="1"></option>
+                        <option value="2">Пункт 1</option>
+                        <option value="3">Пункт 2</option>
+                        <option value="4">Пункт 3</option>
+                    </select><br>
+                </label>
+
+                <label for="second">Какие есть продукты?<br>
+                    <select class="sel" name="second" id="second">
+                        <option value="1"></option>
+                        <option value="2">Пункт 1</option>
+                        <option value="3">Пункт 2</option>
+                        <option value="4">Пункт 3</option>
+                    </select><br>
+                </label>
+
+                <label for="third">Сколько по времени?<br>
+                    <select class="sel" name="third" id="third">
+                        <option value="1"></option>
+                        <option value="2">Пункт 1</option>
+                        <option value="3">Пункт 2</option>
+                        <option value="4">Пункт 3</option>
+                    </select><br>
+                </label>
+            </div>
+
+            <button type="submit">НАЙТИ РЕЦЕПТ</button>
+
+            <div class="tomatoes"></div>
+        </div>
+    </div>
+
+    <div class="main-second-line">
+        <div class="head-second-line">
+            Новые рецепты
+        </div>
+
+        <div class="news news-1">
+            <div class="news-img"></div>
+
+            <div class="news-caption">
+                <div class="news-caption">Суп средиземноморский</div>
+
+                <div class="news-tags">Название тега</div>
+            </div>
+
+            <div class="news-author">
+                Автор: <a>Марина Кирова</a>
+            </div>
+
+            <div class="news-footer">
+                <div class="news-comments">45</div>
+
+                <div class="news-likes">1234</div>
+            </div>
+        </div>
+
+        <div class="news news-2">
+            <div class="news-img"></div>
+
+            <div class="news-caption">
+                <div class="news-caption">Суп средиземноморский</div>
+
+                <div class="news-tags">Название тега</div>
+            </div>
+
+            <div class="news-author">
+                Автор: <a>Марина Кирова</a>
+            </div>
+
+            <div class="news-footer">
+                <div class="news-comments">45</div>
+
+                <div class="news-likes">1234</div>
+            </div>
+        </div>
+
+        <div class="news news-3">
+            <div class="news-img"></div>
+
+            <div class="news-caption">
+                <div class="news-caption">Суп средиземноморский</div>
+
+                <div class="news-tags">Название тега</div>
+            </div>
+
+            <div class="news-author">
+                Автор: <a>Марина Кирова</a>
+            </div>
+
+            <div class="news-footer">
+                <div class="news-comments">45</div>
+
+                <div class="news-likes">1234</div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer>

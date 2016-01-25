@@ -30,17 +30,17 @@ body {
     left: 0;
     top: 2218px;
     width: 1351px;
-    height: 62px;
+    height: 53px;
 }
 
 .bg-body {
     background-color: white;
-    box-shadow: 0 0 9px black;
+    /*box-shadow: 0 0 9px black;*/
     position: absolute;
     left: 172px;
     top: 0;
     width: 1002px;
-    height: 2280px;
+    height: 2272px;
 }
 
 header {
@@ -226,10 +226,10 @@ header .social-networks nav ul li .fb {
 
 main {
     width: 1001px;
-    height: 2000px;
     margin: 0 auto;
     position: relative;
     left: -1px;
+    z-index: 2;
 }
 
 main nav.main-navigation {
@@ -1154,6 +1154,7 @@ main .main-fifth-line {
     height: 358px;
     position: relative;
     background: url("../ex06_img/main-1.png");
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.4);
 }
 
 main .main-fifth-line .question {
@@ -1161,7 +1162,7 @@ main .main-fifth-line .question {
     width: 317px;
     height: 333px;
     position: relative;
-    top: -354px;
+    top: -220px;
     left: 10px;
     display: inline-block;
 }
@@ -1461,7 +1462,6 @@ main .main-fifth-line .news .news-footer .news-likes::before {
     top: 2px;
 }
 
-
 main .main-fifth-line .news-4 {
     top: -3px;
     left: 16px;
@@ -1470,4 +1470,161 @@ main .main-fifth-line .news-4 {
 main .main-fifth-line .news-5 {
     top: -3px;
     left: 19px;
+}
+
+footer {
+    background: url("../ex06_img/main-38.png");
+    width: 1001px;
+    height: 280px;
+    position: relative;
+    top: -12px;
+    left: 173px;
+}
+
+footer .links {
+    width: 654px;
+    height: 140px;
+    position: relative;
+    top: 89px;
+    left: 10px;
+}
+
+footer .links .foo-links {
+    display: inline-block;
+    margin: 0 71px 0 0;
+    vertical-align: top;
+}
+
+footer .links .foo-links ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer .links .foo-links ul li {
+    line-height: 1.3em;
+}
+
+footer .links .foo-links ul li::before {
+    content: url("../ex06_img/main-39.png");
+    position: relative;
+    top: -4px;
+    left: -4px;
+}
+
+footer .links .foo-links .links-caption {
+    color: #b82600;
+    font-family: Tahoma, sans-serif;
+    font-size: 11pt;
+}
+
+footer .links .foo-links .list a {
+    color: #984e3b;
+    font-family: Calibri, sans-serif;
+    font-size: 11pt;
+    text-decoration: none;
+}
+
+footer .links .foo-links .list a:hover {
+    color: #b82600;
+}
+
+footer .links .foo-links-1 {
+    margin-left: 18px;
+}
+
+footer .links .foo-links-4 {
+    margin-right: 0;
+}
+
+footer .foo-logo-sn {
+    width: 280px;
+    height: 140px;
+    float: right;
+    position: relative;
+    top: -52px;
+    right: 34px;
+}
+
+footer .foo-logo-sn .logo-link .logo {
+    background-image: url("../ex06_img/logo.png");
+    position: relative;
+    left: 24px;
+    top: 14px;
+    width: 244px;
+    height: 75px;
+}
+
+footer .foo-logo-sn .social-networks {
+    width: 160px;
+    height: 26px;
+    padding-top: 12px;
+    position: relative;
+    top: 17px;
+    right: -108px;
+    border-top: 1px solid rgba(224, 190, 137, 0.8);
+}
+
+footer .foo-logo-sn .social-networks nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+footer .foo-logo-sn .social-networks nav ul li {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+footer .foo-logo-sn .social-networks .sn {
+    background: url("../ex06_img/social-networks.png");
+}
+
+footer .foo-logo-sn .social-networks nav ul li .vk {
+    width: 27px;
+    height: 26px;
+    background-position: -5px -5px;
+}
+
+footer .foo-logo-sn .social-networks nav ul li .od {
+    width: 27px;
+    height: 26px;
+    background-position: -5px -41px;
+}
+
+footer .foo-logo-sn .social-networks nav ul li .tw {
+    width: 27px;
+    height: 26px;
+    background-position: -42px -5px;
+}
+
+footer .foo-logo-sn .social-networks nav ul li .fb {
+    width: 27px;
+    height: 26px;
+    background-position: -42px -41px;
+}
+
+footer .footer-bottom {
+    background: url("../ex06_img/main-40.png");
+    width: 1053px;
+    height: 54px;
+    position: relative;
+    top: 85px;
+    left: -26px;
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-size: 10pt;
+}
+
+footer .footer-bottom .left-bottom {
+    float: left;
+    position: relative;
+    top: 24px;
+    left: 53px;
+}
+
+footer .footer-bottom .right-bottom {
+    float: right;
+    position: relative;
+    top: 24px;
+    right: -266px;
 }

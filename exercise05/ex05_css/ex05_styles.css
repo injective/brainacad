@@ -337,7 +337,7 @@ main .red-box .red-box-border-white .red-box-lists .column {
     width: 190px;
     height: 100%;
     display: inline-table;
-    margin: 0px 67px 0 0;
+    margin: 0 67px 0 0;
 }
 
 main .red-box .red-box-border-white .red-box-lists .column-4 {
@@ -351,7 +351,7 @@ main .red-box .red-box-border-white .red-box-lists span {
 }
 
 main .red-box .red-box-border-white .red-box-lists ul {
-    padding: 0px 0 25px 20px;
+    padding: 0 0 25px 20px;
     line-height: 1.85em;
 }
 
@@ -520,17 +520,21 @@ main .black-box .black-box-content {
     width: 880px;
     height: 878px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 main .black-box .black-box-content .content {
     width: 272px;
     height: 272px;
     display: inline-block;
-    border: 1px dotted white;
     margin: 0 24px 0 0;
     border-radius: 5px;
     box-shadow: 0 0 30px black;
+}
+
+main .black-box .black-box-content .content a {
+    display: block;
+    width: 272px;
+    height: 272px;
 }
 
 main .black-box .black-box-content .content-3, main .black-box .black-box-content .content-6, main .black-box .black-box-content .content-9 {
@@ -547,44 +551,135 @@ main .black-box .black-box-content .content-1 {
     background: url("../ex05_img/box1.jpg");
 }
 
+main .black-box .black-box-content .content-1:hover {
+    border-radius: 5px;
+    background:
+            url("../ex05_img/zoom.png") no-repeat center,
+            linear-gradient(
+                    rgba(236, 98, 105, 0.6),
+                    rgba(236, 98, 105, 0.6)
+            ),
+            url("../ex05_img/box1.jpg");
+}
+
 main .black-box .black-box-content .content-2 {
     background: url("../ex05_img/box2.jpg");
+}
+
+main .black-box .black-box-content .content-2:hover {
+    border-radius: 5px;
+    background:
+            url("../ex05_img/zoom.png") no-repeat center,
+            linear-gradient(
+                    rgba(236, 98, 105, 0.6),
+                    rgba(236, 98, 105, 0.6)
+            ),
+            url("../ex05_img/box2.jpg");
 }
 
 main .black-box .black-box-content .content-3 {
     background: url("../ex05_img/box3.jpg");
 }
 
+main .black-box .black-box-content .content-3:hover {
+    border-radius: 5px;
+    background:
+            url("../ex05_img/zoom.png") no-repeat center,
+            linear-gradient(
+                    rgba(236, 98, 105, 0.6),
+                    rgba(236, 98, 105, 0.6)
+            ),
+            url("../ex05_img/box3.jpg");
+}
+
 main .black-box .black-box-content .content-4 {
     background: url("../ex05_img/box4.jpg");
+}
+
+main .black-box .black-box-content .content-4:hover {
+    border-radius: 5px;
+    background:
+            url("../ex05_img/zoom.png") no-repeat center,
+            linear-gradient(
+                    rgba(236, 98, 105, 0.6),
+                    rgba(236, 98, 105, 0.6)
+            ),
+            url("../ex05_img/box4.jpg");
 }
 
 main .black-box .black-box-content .content-5 {
     background: url("../ex05_img/box5.jpg");
 }
 
+main .black-box .black-box-content .content-5:hover {
+    border-radius: 5px;
+    background:
+            url("../ex05_img/zoom.png") no-repeat center,
+            linear-gradient(
+                    rgba(236, 98, 105, 0.6),
+                    rgba(236, 98, 105, 0.6)
+            ),
+            url("../ex05_img/box5.jpg");
+}
+
 main .black-box .black-box-content .content-6 {
     background: url("../ex05_img/box6.jpg");
+}
+
+main .black-box .black-box-content .content-6:hover {
+    border-radius: 5px;
+    background:
+            url("../ex05_img/zoom.png") no-repeat center,
+            linear-gradient(
+                    rgba(236, 98, 105, 0.6),
+                    rgba(236, 98, 105, 0.6)
+            ),
+            url("../ex05_img/box6.jpg");
 }
 
 main .black-box .black-box-content .content-7 {
     background: url("../ex05_img/box7.jpg");
 }
 
+main .black-box .black-box-content .content-7:hover {
+    border-radius: 5px;
+    background:
+            url("../ex05_img/zoom.png") no-repeat center,
+            linear-gradient(
+                    rgba(236, 98, 105, 0.6),
+                    rgba(236, 98, 105, 0.6)
+            ),
+            url("../ex05_img/box7.jpg");
+}
+
 main .black-box .black-box-content .content-8 {
     background: url("../ex05_img/box8.jpg");
+}
+
+main .black-box .black-box-content .content-8:hover {
+    border-radius: 5px;
+    background:
+            url("../ex05_img/zoom.png") no-repeat center,
+            linear-gradient(
+                    rgba(236, 98, 105, 0.6),
+                    rgba(236, 98, 105, 0.6)
+            ),
+            url("../ex05_img/box8.jpg");
 }
 
 main .black-box .black-box-content .content-9 {
     background: url("../ex05_img/box9.jpg");
 }
 
-main .black-box .black-box-content .content:hover {
-    background: rgba(236, 97, 108, 0.5);
+main .black-box .black-box-content .content-9:hover {
     border-radius: 5px;
-    /*background: url("../ex05_img/zoom.png") no-repeat;*/
-    /*background-position: center;*/
-    cursor: pointer;
+    background:
+            url("../ex05_img/zoom.png") no-repeat center,
+            linear-gradient(
+                    rgba(236, 98, 105, 0.6),
+                    rgba(236, 98, 105, 0.6)
+            ),
+            url("../ex05_img/box9.jpg");
 }
 
 main .black-box .black-box-upload {

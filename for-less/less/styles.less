@@ -1,0 +1,24 @@
+@mainColor: yellow;
+
+h1 {
+  color: @mainColor;
+  font-weight: 700;
+}
+
+p {
+  color: @mainColor;
+}
+
+a {
+  color: @mainColor;
+}
+
+.btm {
+  background-color: yellow;
+  border: none;
+}
+
+.btn-small {
+  &:extend(.btm);
+  font-size: 0.5em;
+}

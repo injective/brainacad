@@ -1,0 +1,3 @@
+﻿background: url("../ex06_img/bg-left-side.jpg") top left repeat-y, url("../ex06_img/bg-right-side.jpg") top right repeat-y;
+
+ОДМИН

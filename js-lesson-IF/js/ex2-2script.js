@@ -17,7 +17,7 @@ var firstQuestion = prompt('Наибольшее количество игр в 
                             'D: Райан Гиггз');
 
 if (firstQuestion === 'B' || firstQuestion === 'b') {
-    var secondQuestion = prompt('Вы верно ответили на первый вопрос!' +
+    var secondQuestion = prompt('Вы верно ответили на первый вопрос!\n' +
                                 '\n' +
                                 'В каком городе в 1932 году был проведён первый международный кинофестиваль?\n' +
                                 'A: Канн\n' +
@@ -26,8 +26,8 @@ if (firstQuestion === 'B' || firstQuestion === 'b') {
                                 'D: Берлин');
 
     if (secondQuestion === 'B' || secondQuestion === 'b') {
-        var thirdQuestion = prompt('Вы верно ответили на второй вопрос!' +
-                                    '' +
+        var thirdQuestion = prompt('Вы верно ответили на второй вопрос!\n' +
+                                    '\n' +
                                     'Какой химический элемент был назван в честь злого подземного гнома?\n' +
                                     'A: Гафний\n' +
                                     'B: Бериллий\n' +
@@ -35,8 +35,8 @@ if (firstQuestion === 'B' || firstQuestion === 'b') {
                                     'D: Теллур');
 
         if (thirdQuestion === 'C' || thirdQuestion === 'c') {
-            var fourQuestion = prompt('Вы верно ответили на третий вопрос!' +
-                                        '' +
+            var fourQuestion = prompt('Вы верно ответили на третий вопрос!\n' +
+                                        '\n' +
                                         'В какой из этих столиц бывших союзных республик раньше появилось метро?\n' +
                                         'A: Тбилиси\n' +
                                         'B: Ереван\n' +
@@ -44,8 +44,8 @@ if (firstQuestion === 'B' || firstQuestion === 'b') {
                                         'D: Минск');
 
             if (fourQuestion === 'A' || fourQuestion === 'a') {
-                var fiveQuestion = prompt('Вы верно ответили на четвертый вопрос!' +
-                                            '' +
+                var fiveQuestion = prompt('Вы верно ответили на четвертый вопрос!\n' +
+                                            '\n' +
                                             'Одним из направлений какой религиозной философии является учение дзен?\n' +
                                             'A: Даосизм\n' +
                                             'B: Индуизм\n' +

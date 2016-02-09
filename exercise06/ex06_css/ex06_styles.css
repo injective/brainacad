@@ -1,37 +1,39 @@
 body {
     margin: 0;
+    background: url("../ex06_img/bg-left-side.jpg") top left repeat-y,
+                url("../ex06_img/bg-right-side.jpg") top right repeat-y;
 }
 
 .bg {
     position: relative;
 }
 
-.bg-left-side {
-    background-image: url("../ex06_img/bg-left-side.jpg");
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 174px;
-    height: 2237px;
-}
+/*.bg-left-side {*/
+    /*background: url("../ex06_img/bg-left-side.jpg") top repeat-y;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 174px;*/
+    /*height: 2237px;*/
+/*}*/
 
-.bg-right-side {
-    background-image: url("../ex06_img/bg-right-side.jpg");
-    position: absolute;
-    left: 1173px;
-    top: 0;
-    width: 178px;
-    height: 2237px;
-}
+/*.bg-right-side {*/
+    /*background: url("../ex06_img/bg-left-side.jpg") top repeat-y;*/
+    /*position: absolute;*/
+    /*left: 1173px;*/
+    /*top: 0;*/
+    /*width: 178px;*/
+    /*height: 2237px;*/
+/*}*/
 
-.bg-footer {
-    background-image: url("../ex06_img/bg-footer.png");
-    position: absolute;
-    left: 0;
-    top: 2218px;
-    width: 1351px;
-    height: 53px;
-}
+/*.bg-footer {*/
+    /*background-image: url("../ex06_img/bg-footer.png");*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 2218px;*/
+    /*width: 1351px;*/
+    /*height: 53px;*/
+/*}*/
 
 .bg-body {
     background-color: white;
@@ -1283,7 +1285,7 @@ main .main-fifth-line .question .eggs-img {
 
 main .main-fifth-line .fifth-head {
     background: url("../ex06_img/main-36.png") no-repeat;
-    width: 1008px;
+    width: 837px;
     height: 46px;
     display: inline-block;
     position: relative;
@@ -1476,9 +1478,9 @@ footer {
     background: url("../ex06_img/main-38.png");
     width: 1001px;
     height: 280px;
+    margin: 0 auto;
     position: relative;
     top: -12px;
-    left: 173px;
 }
 
 footer .links {
@@ -1608,8 +1610,8 @@ footer .footer-bottom {
     width: 1053px;
     height: 54px;
     position: relative;
-    top: 85px;
-    left: -26px;
+    top: 98px;
+    left: -28px;
     color: white;
     font-family: Calibri, sans-serif;
     font-size: 10pt;

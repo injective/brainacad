@@ -1,56 +1,22 @@
 body {
     margin: 0;
-    background: url("../ex06_img/bg-left-side.jpg") top left repeat-y,
-                url("../ex06_img/bg-right-side.jpg") top right repeat-y;
 }
 
 .bg {
     position: relative;
-}
-
-/*.bg-left-side {*/
-    /*background: url("../ex06_img/bg-left-side.jpg") top repeat-y;*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*top: 0;*/
-    /*width: 174px;*/
-    /*height: 2237px;*/
-/*}*/
-
-/*.bg-right-side {*/
-    /*background: url("../ex06_img/bg-left-side.jpg") top repeat-y;*/
-    /*position: absolute;*/
-    /*left: 1173px;*/
-    /*top: 0;*/
-    /*width: 178px;*/
-    /*height: 2237px;*/
-/*}*/
-
-/*.bg-footer {*/
-    /*background-image: url("../ex06_img/bg-footer.png");*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*top: 2218px;*/
-    /*width: 1351px;*/
-    /*height: 53px;*/
-/*}*/
-
-.bg-body {
-    background-color: white;
-    /*box-shadow: 0 0 9px black;*/
-    position: absolute;
-    left: 172px;
-    top: 0;
-    width: 1002px;
-    height: 2272px;
+    width: 1340px;
+    margin: 0 auto;
+    background: url("../ex06_img/bg-left-side.jpg") top left repeat-y,
+    url("../ex06_img/bg-right-side.jpg") top right repeat-y;
 }
 
 header {
     width: 1001px;
     height: 149px;
-    margin: 0 auto;
+    margin: 0px auto -9px;
     position: relative;
     left: -1px;
+    background-color: white;
     background-image: url("../ex06_img/header-2.png");
 }
 
@@ -232,6 +198,7 @@ main {
     position: relative;
     left: -1px;
     z-index: 2;
+    background-color: white;
 }
 
 main nav.main-navigation {
@@ -1475,12 +1442,14 @@ main .main-fifth-line .news-5 {
 }
 
 footer {
-    background: url("../ex06_img/main-38.png");
+    background-color: white;
+    background-image: url("../ex06_img/main-38.png");
     width: 1001px;
     height: 280px;
     margin: 0 auto;
     position: relative;
     top: -12px;
+    left: -1px;
 }
 
 footer .links {

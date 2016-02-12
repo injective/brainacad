@@ -12,10 +12,7 @@ function isNumeric(n) {
 
 do {
     k = +prompt('Напишите вашу температуру тела', '36.6');
-    if (isNumeric(k)) {
-        boo = true;
-    }
-} while(boo === false)
+} while(isNumeric(k) === false)
 
 if (k < 35) {
     document.write('<p style="text-align: center; font-size: 30px;">Вы - труп. :(</p>');

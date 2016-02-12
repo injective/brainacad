@@ -2,12 +2,14 @@
 //    есть ли во введенной пользователем строке латинские буквы.
 
 var str = prompt('Введите строку на наличие латинских символов');
-var code;
+var codeChar;
+
+document.write('Введенная вами строка: ' + str + '<br><br>');
 
 for (var i = 0; i < str.length; i++) {
-    code = str.charCodeAt(i);
+    codeChar = str.charCodeAt(i);
 
-    if ((code >= 65 && code <= 90) || (code >= 97 && code <= 122)) {
-        document.write('<p> str[' + i + '] = ' + str[i] + ' - символ латинского алфавита</p>');
+    if ((codeChar >= 65 && codeChar <= 90) || (codeChar >= 97 && codeChar <= 122)) {
+        document.write("str[" + i + "] = '" + str[i] + "' - символ латинского алфавита<br>");
     }
 }

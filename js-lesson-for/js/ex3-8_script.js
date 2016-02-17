@@ -25,3 +25,4 @@ if (k < 35) {
 } else {
     document.write('<p style="text-align: center; font-size: 30px;">Вы сгорели. :(</p>');
 }
+

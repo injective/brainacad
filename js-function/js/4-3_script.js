@@ -21,7 +21,7 @@ function game() {
 
     function setMoneyForGame() {
         var gameover = false;
-        alert('Ваш стартовый депозит ' + money + ' гривен.')
+        alert('Ваш стартовый депозит ' + money + ' гривен.');
         do {
             if(money <= 0) {
                 alert('Ваш депозит равен нулю! :(');
@@ -45,39 +45,116 @@ function game() {
         alert('Вы проиграли.');
     }
 
-    function randomDice(rate) {
-        var min = 1;
-        var max = 6;
-        var yourNumber = +prompt('Введите число от 1 до 6');
-        if(isNumeric(yourNumber) && (yourNumber === 1 || yourNumber === 2 || yourNumber === 3 ||
-                                        yourNumber === 4 || yourNumber === 5 || yourNumber === 6)) {
-            var firstRandomNumber = Math.round(min + Math.random() * (max - min));
-            var secondRandomNumber = Math.round(min + Math.random() * (max - min));
-            var thirdRandomNumber = Math.round(min + Math.random() * (max - min));
+//function randomDice(rate) {
+//        var min = 1;
+//        var max = 7;
+//        var yourNumber = +prompt('Введите число от 1 до 6');
+//        if(isNumeric(yourNumber) && (yourNumber === 1 || yourNumber === 2 || yourNumber === 3 ||
+//            yourNumber === 4 || yourNumber === 5 || yourNumber === 6)) {
+//            var firstRandomNumber = +Math.floor(Math.random() * (max - min)) + 1;
+//            var secondRandomNumber = +Math.floor(Math.random() * (max - min)) + 1;
+//            var thirdRandomNumber = +Math.floor(Math.random() * (max - min)) + 1;
+//
+//            if(firstRandomNumber === yourNumber || secondRandomNumber === yourNumber || thirdRandomNumber === yourNumber) {
+//                alert('Ваше число - ' + yourNumber + '\n' +
+//                      'Кость I - ' + firstRandomNumber + '\n' +
+//                      'Кость II - ' + secondRandomNumber + '\n' +
+//                      'Кость III - ' + thirdRandomNumber + '\n' +
+//                      '\n' +
+//                      'Вы выиграли! Совпало одно из трех чисел! +' + rate + ' к депозиту!');
+//                money += rate;
+//                return money;
+//            } else if((firstRandomNumber === yourNumber && secondRandomNumber === yourNumber) ||
+//                (firstRandomNumber === yourNumber && thirdRandomNumber === yourNumber) ||
+//                (secondRandomNumber === yourNumber && thirdRandomNumber === yourNumber)) {
+//                alert('Ваше число - ' + yourNumber + '\n' +
+//                      'Кость I - ' + firstRandomNumber + '\n' +
+//                      'Кость II - ' + secondRandomNumber + '\n' +
+//                      'Кость III - ' + thirdRandomNumber + '\n' +
+//                      '\n' +
+//                      'Вы выиграли! Совпали два из трех чисел! +' + rate*2 + ' к депозиту!');
+//                money += rate*2;
+//                return money;
+//            } else if(firstRandomNumber === yourNumber && secondRandomNumber === yourNumber && thirdRandomNumber === yourNumber) {
+//                alert('Ваше число - ' + yourNumber + '\n' +
+//                      'Кость I - ' + firstRandomNumber + '\n' +
+//                      'Кость II - ' + secondRandomNumber + '\n' +
+//                      'Кость III - ' + thirdRandomNumber + '\n' +
+//                      '\n' +
+//                      'БИНГО!!!! Вы выиграли! Совпали ТРИ из трех чисел! +' + rate*3 + ' к депозиту!');
+//                money += rate*3;
+//                return money;
+//            } else {
+//                alert('Ваше число - ' + yourNumber + '\n' +
+//                'Кость I - ' + firstRandomNumber + '\n' +
+//                'Кость II - ' + secondRandomNumber + '\n' +
+//                'Кость III - ' + thirdRandomNumber + '\n' +
+//                    '\n' +
+//                    'Вам не повезло.');
+//                money = money - rate;
+//                return money;
+//            }
+//        } else {
+//            alert('Вы выбрали кость не число!');
+//        }
+//    }
+//    setMoneyForGame();
+//}
 
-            if(firstRandomNumber === yourNumber || secondRandomNumber === yourNumber || thirdRandomNumber === yourNumber) {
-                alert('Вы выиграли! Совпало одно из трех чисел! +' + rate + ' к депозиту!');
-                money += rate;
-                return money;
-            } else if((firstRandomNumber === yourNumber && secondRandomNumber === yourNumber) ||
-                    (firstRandomNumber === yourNumber && thirdRandomNumber === yourNumber) ||
-                    (secondRandomNumber === yourNumber && thirdRandomNumber === yourNumber)) {
-                alert('Вы выиграли! Совпали два из трех чисел! +' + rate*2 + ' к депозиту!');
-                money += rate*2;
-                return money;
-            } else if(firstRandomNumber === yourNumber && secondRandomNumber === yourNumber && thirdRandomNumber === yourNumber) {
-                alert('БИНГО!!!! Вы выиграли! Совпали ТРИ из трех чисел! +' + rate*3 + ' к депозиту!');
-                money += rate*3;
-                return money;
-            } else {
-                money = money - rate;
-                return money;
-            }
+function randomDice(rate) {
+    var min = 1;
+    var max = 7;
+    var yourNumber = +prompt('Введите число от 1 до 6');
+    if(isNumeric(yourNumber) && (yourNumber === 1 || yourNumber === 2 || yourNumber === 3 ||
+        yourNumber === 4 || yourNumber === 5 || yourNumber === 6)) {
+        var firstRandomNumber = +Math.floor(Math.random() * (max - min)) + 1;
+        var secondRandomNumber = +Math.floor(Math.random() * (max - min)) + 1;
+        var thirdRandomNumber = +Math.floor(Math.random() * (max - min)) + 1;
+
+        if(firstRandomNumber === yourNumber && secondRandomNumber === yourNumber && thirdRandomNumber === yourNumber) {
+            alert('Ваше число - ' + yourNumber + '\n' +
+                'Кость I - ' + firstRandomNumber + '\n' +
+                'Кость II - ' + secondRandomNumber + '\n' +
+                'Кость III - ' + thirdRandomNumber + '\n' +
+                '\n' +
+                'БИНГО!!!! Вы выиграли! Совпали ТРИ из трех чисел! +' + rate*3 + ' к депозиту!');
+            money += rate*3;
+            return money;
+        } else if((firstRandomNumber === yourNumber && secondRandomNumber === yourNumber) ||
+            (firstRandomNumber === yourNumber && thirdRandomNumber === yourNumber) ||
+            (secondRandomNumber === yourNumber && thirdRandomNumber === yourNumber)) {
+            alert('Ваше число - ' + yourNumber + '\n' +
+                'Кость I - ' + firstRandomNumber + '\n' +
+                'Кость II - ' + secondRandomNumber + '\n' +
+                'Кость III - ' + thirdRandomNumber + '\n' +
+                '\n' +
+                'Вы выиграли! Совпали два из трех чисел! +' + rate*2 + ' к депозиту!');
+            money += rate*2;
+            return money;
+        } else if (firstRandomNumber === yourNumber || secondRandomNumber === yourNumber || thirdRandomNumber === yourNumber) {
+            alert('Ваше число - ' + yourNumber + '\n' +
+                'Кость I - ' + firstRandomNumber + '\n' +
+                'Кость II - ' + secondRandomNumber + '\n' +
+                'Кость III - ' + thirdRandomNumber + '\n' +
+                '\n' +
+                'Вы выиграли! Совпало одно из трех чисел! +' + rate + ' к депозиту!');
+            money += rate;
+            return money;
         } else {
-            alert('Вы выбрали кость не число!');
+            alert('Ваше число - ' + yourNumber + '\n' +
+                'Кость I - ' + firstRandomNumber + '\n' +
+                'Кость II - ' + secondRandomNumber + '\n' +
+                'Кость III - ' + thirdRandomNumber + '\n' +
+                '\n' +
+                'Вам не повезло.');
+            money = money - rate;
+            return money;
         }
+    } else {
+        alert('Вы выбрали кость не число!');
     }
-    setMoneyForGame();
+}
+setMoneyForGame();
 }
 
 game();

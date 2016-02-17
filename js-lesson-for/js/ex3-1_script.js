@@ -11,3 +11,17 @@ for(var i = 1; i <= 9; i++) {
 str += '</table>';
 
 document.write(str);
+
+var boo = false;
+
+
+do {
+    document.write(i);
+} while (boo === true)
+
+
+
+
+while(boo === true) {
+    document.write(i);
+}

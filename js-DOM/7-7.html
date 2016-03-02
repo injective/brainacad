@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Block 2</title>
+    <style>
+        .wall { display: inline-block; }
+        .wall-vertical {width:76px; height:554px; background-image:url('img/super-mario-br.jpg'); display:inline-block;}
+        .wall-left { position:relative; top:40px; left:16px; }
+        .wall-right { position:relative; top:40px; left:1057px; }
+
+        .wall-horizontal { width:1045px; height:52px; background-image:url('img/super-mario-br.jpg'); display:inline-block;}
+        .wall-top { position:relative; top:-462px; left:-68px; }
+        .wall-bottom { position:relative; top:-16px; left:92px; }
+    </style>
+</head>
+<body style="background-color:rgb(93,146,252);">
+
+<div class="wall wall-vertical wall-left"></div>
+<div class="wall wall-vertical wall-right"></div>
+<div class="wall wall-horizontal wall-top"></div>
+<div class="wall wall-horizontal wall-bottom"></div>
+
+
+<div class="sq" tabindex="0" style="width:50px;height:50px;position:absolute;top:300px;left:600px;">
+    <img src="img/smb-1.jpg" alt="22">
+</div>
+
+<script src="js/7-7_script.js"></script>
+</body>
+</html>

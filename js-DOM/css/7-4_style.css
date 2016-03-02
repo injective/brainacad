@@ -1,0 +1,14 @@
+body {
+    background: #71a000;
+    position: relative;
+    transition:left 0.5s, top 0.5s;
+}
+
+
+.btn {
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    color: #fff;
+
+}

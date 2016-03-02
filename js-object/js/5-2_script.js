@@ -38,7 +38,7 @@ var stackCards = {
     randomCard: function() {
 
         if(this.cards.length === 0) {
-            alert('В колоде нет карт, перетасуйте командой deck(36) / deck(52)')
+            alert('В колоде нет карт, перетасуйте командой deck(36) / deck(52)');
         } else {
             var rnd = Math.floor(Math.random() * this.cards.length);
             var rndCard = this.cards[rnd];

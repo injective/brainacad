@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <style type="text/css">
+        .tblCalc{
+            border:1px solid gray;
+            margin:0;
+            padding:0;
+            width:250px;
+            text-align:center;
+        }
+        .tblCalc input{
+            border:1px solid gray;
+            width:30px;
+            margin:4px;
+        }
+        #btnWide{
+            width:80px;
+        }
+        #editWide{
+            width:250px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<form name="calc" action="">
+    <table class="tblCalc" cellpadding=0 cellspacing=0>
+        <tr>
+            <td colspan=5 align=middle>
+                <input id="editWide" name="ReadOut" type="Text"
+                       size=28 value="" width="250px">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td><input id="btnClear" type="Button"
+                       value="C"></td>
+            <td><input id="btnClearEntry" type="Button"
+                       value="CE"></td>
+        </tr>
+        <tr>
+            <td><input id="btnSeven" type="Button"
+                       value="7"></td>
+            <td><input id="btnEight" type="Button"
+                       value="8"></td>
+            <td><input id="btnNine" type="Button"
+                       value="9"></td>
+            <td><input id="btnPlus" type="Button"
+                       value="+"></td>
+            <td><input id="btnMultiply" type="Button"
+                       value="*"></td>
+        </tr>
+        <tr>
+            <td><input id="btnFour" type="Button"
+                       value="4"></td>
+            <td><input id="btnFive" type="Button"
+                       value="5"></td>
+            <td><input id="btnSix" type="Button"
+                       value="6"></td>
+            <td><input id="btnMinus" type="Button"
+                       value="-"></td>
+            <td align=middle><input id="btnDivide" type="Button"
+                                    value=" / "></td>
+        </tr>
+        <tr>
+            <td><input id="btnOne" type="Button"
+                       value="1"></td>
+            <td><input id="btnTwo" type="Button"
+                       value="2"></td>
+            <td><input id="btnThree" type="Button"
+                       value="3"></td>
+            <td><input id="btnPercent" type="Button"
+                       value="%"></td>
+            <td align=middle>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><input id="btnZero" type="Button"
+                       value="0"></td>
+            <td><input id="btnDecimal" type="Button"
+                       value="."></td>
+            <td><input id="btnNeg" type="button"
+                       value="+/-"></td>
+            <td colspan="2"><input id="btnWide" name="btnEquals"
+                                   type="Button" value="="></td>
+        </tr>
+    </table>
+</form>
+
+<script src="js/example_script.js"></script>
+</body>
+</html>

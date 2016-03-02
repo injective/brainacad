@@ -6,13 +6,13 @@
 //      выиграл (поздравление, увеличение выигрыша и переход к следующему вопросу),
 //      проиграл (сообщение об окончании игры).
 
-
+//обьект с вопросами
 var game = {
     questions: [
         {
-            q: 'Что растёт в огороде?',
-            a: ['Лук', 'Пистолет', 'Пулемёт', 'Ракета СС-20'],
-            trueAns: 0
+            q: 'Что растёт в огороде?',                         //вопрос
+            a: ['Лук', 'Пистолет', 'Пулемёт', 'Ракета СС-20'],  //ответы
+            trueAns: 0                                          //правильный ответ - индекс массива c ответами, т.е. game.a[0]
         },
         {
             q: 'Как называют микроавтобусы, совершающие поездки по определённым маршрутам?',
@@ -86,36 +86,57 @@ var game = {
         }
     ],
 
-    bankStep: [0, 100, 200, 300, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000, 300000, 500000, 1000000],
+    bankStep: [0, 100, 200, 300, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000, 300000, 500000, 1000000], //шаги выиграшей. ну типа в гривнах)))
 
-    playerBank: 0,
+    playerBank: 0, //текущий выигрыш
 
-    playerName: setPlayerName,
+    playerName: setPlayerName, //задать имя
 
-    nextQ: nextQuestion
-
+    nextQ: nextQuestion //следующий вопрос
 };
+
+
 
 function setPlayerName(playerName) {
     this.playerName = playerName;
 }
 
 function nextQuestion() {
-    var boo = true;
-    var i = 0;
-    var playerAns;
+    var boo = true; //флаг выхода из цикла do..while, как только отвечаешь неправильно, boo=false и выход из цикла
+    var i = 0;      //итератор
+    var playerAns;  //сюда записать ответ пользователя
+    var questionOut = document.querySelector('div.out'); //questionOut - вывод вопроса в div.out
+    var ans1Out = document.querySelector('button#ans-1'); // ans1Out, ans2Out, ans3Out, ans4Out - вывод ответов.
+    var ans2Out = document.querySelector('button#ans-2');
+    var ans3Out = document.querySelector('button#ans-3');
+    var ans4Out = document.querySelector('button#ans-4');
     alert('Добро пожаловать в игру, ' + this.playerName + '!');
 
     do {
-        if (this.playerBank >= 0 && this.playerBank < 1000000) {
-            playerAns = +prompt('1. ' + this.questions[i].q + '\n' +
-                                                                 '\n' +
-                                'A. ' + this.questions[i].a[0] + '\n' +
-                                'B. ' + this.questions[i].a[1] + '\n' +
-                                'C. ' + this.questions[i].a[2] + '\n' +
-                                'D. ' + this.questions[i].a[3] + '\n');
+        if (this.playerBank >= 0 && this.playerBank < 1000000) {  //вопросы задаются, пока твой выигрыш от 0 до 1'000'000грн
 
-            if (playerAns === this.questions[i].trueAns) {
+
+            questionOut.innerHTML = '<span style="font-size: 10px;">Ваш выигрыш: ' + this.playerBank + ' грн</span><br>' +
+                '1. ' + this.questions[i].q;
+            ans1Out.innerHTML = 'A. ' + this.questions[i].a[0] + '\n';
+            ans2Out.innerHTML = 'B. ' + this.questions[i].a[1] + '\n';
+            ans3Out.innerHTML = 'C. ' + this.questions[i].a[2] + '\n';
+            ans4Out.innerHTML = 'D. ' + this.questions[i].a[3] + '\n';
+
+
+            //попытка обработать клик ответа - элементы ans1Out,ans2Out,ans3Out,ans4Out
+            [].forEach.call(document.querySelectorAll('button'), function(elem){
+                elem.addEventListener('click', handleClick, false);
+            });
+
+            function handleClick() {
+                playerAns = this.getAttribute('value');
+            }
+
+            // в следующем блове по идее должна была быть проверка - если кликнул на правильный ответ,
+            // то итератор +1, текущий "банк" увеличил и сообщение что ответил правильно.
+            // дальше должен запуститься новый вопрос.
+            if (playerAns == this.questions[i].trueAns) {
                 i++;
                 this.playerBank = this.bankStep[i];
                 alert('Правильный ответ! Вы выиграли ' + this.playerBank + '!');
@@ -123,22 +144,38 @@ function nextQuestion() {
                 alert('Ответ неверный, Вы проиграли!');
                 boo = false;
             }
-        } else if (this.playerBank === 1000000) {
+
+        } else if (this.playerBank === 1000000) { //если отвечаешь правильно на 15 вопросов, то победа))
             alert(this.playerName + ', Вы победили! 1000000 гривен Ваш!');
+            boo = false;
         } else {
-            alert('ERROR!');
+            alert('ERROR!'); //если что-то в этой жизни пошло не так - проигрыш))
             boo = false;
         }
     } while (boo);
 }
 
-//function shuffle() {
-//    return this.questions[0].a.sort(function() {
-//        return 0.5 - Math.random();
-//    });
-//};
+
+
+//здесь типа запускаю программу
+document.querySelector('.start').addEventListener('click', startFunction, false);
+
+function startFunction() {
+    document.querySelector('.start').style.display = 'none';
+    document.querySelector('form.setName').style.display = 'block';
+}
 
 
 
-game.playerName('Vadim');
-game.nextQ();
+document.querySelector('#submitName').addEventListener('click', function(){
+
+    document.querySelector('form.setName').style.display = 'none';
+    document.getElementById('tableSilent').style.display = 'table';
+    var nameAttribute = document.querySelector('input').value;
+    game.playerName(nameAttribute);
+    game.nextQ();
+
+}, false);
+
+
+

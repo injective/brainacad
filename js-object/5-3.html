@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>5-3</title>
+    <link rel="stylesheet" href="css/5-3_styles.css">
 </head>
 <body>
 
+<div id="main">
+    <div id="question">
+        <div class="triangle-left"></div>
+        <div class="qu" id="questionArea">
+            <div class="out">Welcome!</div>
+        </div>
+        <div class="triangle-right"></div>
+    </div>
+
+    <div id="answers">
+        <div id="tableSilent">
+            <div>
+                <button class="ans" id="ans-1" value="0"></button>
+                <button class="ans" id="ans-2" value="1"></button>
+            </div>
+            <div>
+                <button class="ans" id="ans-3" value="2"></button>
+                <button class="ans" id="ans-4" value="3"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="start">Начать игру</div>
+
+    <form class="setName">
+        <input type="text" value="" placeholder="Your name"><br>
+        <button type="submit" id="submitName">OK</button>
+    </form>
+</div>
+
+<script src="js/5-3-DOM-script.js"></script>
 </body>
 </html>

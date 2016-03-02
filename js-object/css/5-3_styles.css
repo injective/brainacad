@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic&subset=latin,cyrillic);
+
+body {
+    background-color: cornflowerblue;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+#main {
+    width: 50%;
+    height: 250px;
+    margin: 0 auto;
+    padding: 5px 0;
+    border: 1px solid #004ba0;
+    position: relative;
+}
+
+#question {
+    height: 100px;
+}
+
+.qu, .triangle-left, .triangle-right {
+    display: inline-block;
+}
+
+.qu {
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #004ba0;
+    position: relative;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid #004ba0;
+    border-bottom: 50px solid transparent;
+    margin-right: -5px;
+    margin-left: 35px;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid #004ba0;
+    border-bottom: 50px solid transparent;
+    margin-left: -6px;
+}
+
+.out {
+    height: 100px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: absolute;
+}
+
+#answers {
+    width: 78%;
+    height: 100px;
+    margin: 20px auto 0;
+    clear: both;
+}
+
+#tableSilent {
+    display: none;
+}
+
+#answers .ans {
+    width: 255px;
+    height: 40px;
+    margin-bottom: 3px;
+    text-align: left;
+    font-family: inherit;
+    font-size: 19px;
+}
+
+
+#answers td:hover {
+    border: 1px solid white;
+    color: #004ba0;
+    cursor: pointer;
+}
+
+div.start {
+    width: 90%;
+    height: 30px;
+    margin: 0 auto 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div.start:hover {
+    border: 1px solid #004ba0;
+    color: #004ba0;
+    cursor: pointer;
+}
+
+div.start:active {
+    border: 1px solid #004ba0;
+    color: white;
+    background-color: #004ba0;
+    cursor: pointer;
+}
+
+form.setName {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    left: 190px;
+    bottom: 85px;
+    display: none;
+}
+
+form.setName input {
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    text-align: center;
+}
+
+#submitName {
+    width: 304px;
+    height: 35px;
+    margin: 10px 0 0 0;
+}
